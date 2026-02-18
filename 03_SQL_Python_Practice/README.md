@@ -28,6 +28,15 @@ The script loads cleaned sales data and calculates business metrics programmatic
 
 ---
 
+## Business Insights
+
+- The West region generated the highest revenue ($1,110).
+- Direct-to-Consumer (DTC) channel significantly outperformed Retail.
+- Total revenue for the period analyzed was $3,260.
+- Regional distribution suggests stronger performance in West and East markets.
+
+---
+
 ## What This Demonstrates
 
 - Reading Excel files with pandas
