@@ -1,108 +1,49 @@
-# SQL and Python Practice
+# SQL + Python Sales Analysis
 
-This section showcases my ability to work directly with data at scale and automate analytical workflows.
-
-## SQL Analysis: Footwear Sales Performance (PostgreSQL)
-
-This analysis answers key business questions using PostgreSQL and transactional sales data.
-
-### Revenue by Product Category
-```sql
-SELECT
-  product_category,
-  SUM(revenue) AS total_revenue
-FROM footwear_sales
-GROUP BY product_category
-ORDER BY total_revenue DESC;
-
-Insight:
-Running is the top revenue-driving category, outperforming Training and Lifestyle, indicating strong demand for performance footwear.
-
-
+## Project Overview
+This project extends the Excel footwear sales analysis into Python using pandas.  
+The script loads cleaned sales data and calculates business metrics programmatically.
 
 ---
-### Revenue by Region
-```markdown
-### Revenue by Region
-```sql
-SELECT
-  region,
-  SUM(revenue) AS total_revenue
-FROM footwear_sales
-GROUP BY region
-ORDER BY total_revenue DESC;
 
-Insight:
-The West region leads revenue, while the Midwest and South underperform, suggesting opportunities for targeted regional strategies.
-
-
+## Tools Used
+- Python 3
+- pandas
+- openpyxl
+- Excel (data source)
 
 ---
-### DTC vs Retail Performance
-```markdown
-### DTC vs Retail Performance
-```sql
-SELECT
-  channel,
-  SUM(revenue) AS total_revenue,
-  SUM(units_sold) AS total_units
-FROM footwear_sales
-GROUP BY channel
-ORDER BY total_revenue DESC;
 
-Insight:
-Direct-to-Consumer significantly outperforms Retail in both revenue and units sold, highlighting the strength of owned channels.
+## Key Metrics Calculated
 
-
+- Total Revenue: $3,260
+- Revenue by Region:
+  - West: 1,110
+  - East: 880
+  - Midwest: 685
+  - South: 585
+- Revenue by Channel:
+  - Direct-to-Consumer (DTC): 2,125
+  - Retail: 1,135
 
 ---
-### Monthly Revenue Trend
-```markdown
-### Monthly Revenue Trend
-```sql
-SELECT
-  year,
-  month,
-  SUM(revenue) AS monthly_revenue
-FROM footwear_sales
-GROUP BY year, month
-ORDER BY year, month;
 
-Insight:
-Revenue peaks in January with a secondary increase in October, reflecting seasonal purchasing behavior.
+## What This Demonstrates
 
-
+- Reading Excel files with pandas
+- Selecting specific sheets
+- Data inspection using `.head()` and `.info()`
+- Groupby aggregation
+- Business KPI calculation
+- Automating reporting logic
 
 ---
-### Quarterly Revenue Trend
-```markdown
-### Quarterly Revenue Trend
-```sql
-SELECT
-  quarter,
-  SUM(revenue) AS total_revenue
-FROM footwear_sales
-GROUP BY quarter
-ORDER BY total_revenue DESC;
 
-Insight:
-Q1 shows the strongest performance, while Q2 is the weakest, indicating mid-year growth opportunities.
+## How to Run
 
+From the project root:
 
+```bash
+cd 03_SQL_Python_Practice
+python3 footwear_sales_analysis.py
 
----
-SQL skills demonstrated:
-- Joins (inner, left, multi-table)
-- Common Table Expressions (CTEs)
-- Window functions (ranking, rolling metrics)
-- Subqueries for advanced filtering and aggregation
-
-Python skills demonstrated:
-- Data cleaning and validation with pandas
-- Automation scripts for recurring tasks
-- Logic to support alerts and data refreshes
-
-What this section proves:
-- I don’t rely on manual processes
-- I can build repeatable, scalable analysis
-- I design systems that make analysis easier over time
