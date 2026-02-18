@@ -47,3 +47,12 @@ From the project root:
 cd 03_SQL_Python_Practice
 python3 footwear_sales_analysis.py
 
+
+
+## Output Preview
+
+Below is the terminal output after running the Python analysis script:
+
+![Terminal Output](Terminal%20Output.png)
+
+
