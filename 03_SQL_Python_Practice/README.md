@@ -1,16 +1,15 @@
 # End-to-End Sales Performance Analysis (SQL + Python)
 
 ## Project Overview
-This project extends the Excel footwear sales analysis into Python using pandas.  
-The script loads cleaned sales data and calculates business metrics programmatically.
-
+This project extends a footwear sales analysis into Python using pandas to automate KPI calculations and performance reporting. The script evaluates regional and channel revenue distribution to identify top-performing segments and support data-driven decisions.
 ---
 
 ## Tools Used
-- Python 3
+- Python
 - pandas
-- openpyxl
+- SQL-style aggregation
 - Excel (data source)
+- Git / GitHub
 
 ---
 
@@ -63,3 +62,12 @@ python3 footwear_sales_analysis.py
 
 Below is the terminal output after running the Python analysis script:
 ![Terminal Output](terminal_output.png)
+
+---
+
+## Key Insights
+
+- Direct-to-Consumer (DTC) channel generated the highest revenue.
+- West region outperformed other markets.
+- Total revenue for the analyzed period was $3,260.
+- Automated aggregation reduced manual Excel processing.
