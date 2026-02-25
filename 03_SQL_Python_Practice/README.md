@@ -68,6 +68,6 @@ Below is the terminal output after running the Python analysis script:
 ## Key Insights
 
 - Direct-to-Consumer (DTC) channel generated the highest revenue.
-- West region outperformed other markets.
+- The West region generated the highest revenue ($1,110), indicating stronger regional performance.
 - Total revenue for the analyzed period was $3,260.
 - Automated aggregation reduced manual Excel processing.
