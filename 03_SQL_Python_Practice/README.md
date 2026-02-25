@@ -62,5 +62,4 @@ python3 footwear_sales_analysis.py
 ## Output Preview
 
 Below is the terminal output after running the Python analysis script:
-
-![Terminal Output](Terminal Output.png)
+![Terminal Output](terminal_output.png)
