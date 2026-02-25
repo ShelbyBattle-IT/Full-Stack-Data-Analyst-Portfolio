@@ -1,4 +1,4 @@
-# SQL + Python Sales Analysis
+# End-to-End Sales Performance Analysis (SQL + Python)
 
 ## Project Overview
 This project extends the Excel footwear sales analysis into Python using pandas.  
