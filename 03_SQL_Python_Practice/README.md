@@ -55,6 +55,7 @@ From the project root:
 ```bash
 cd 03_SQL_Python_Practice
 python3 footwear_sales_analysis.py
+```
 
 ---
 
@@ -63,6 +64,3 @@ python3 footwear_sales_analysis.py
 Below is the terminal output after running the Python analysis script:
 
 ![Terminal Output](Terminal Output.png)
-
-
-
